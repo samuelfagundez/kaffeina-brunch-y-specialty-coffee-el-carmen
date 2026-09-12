@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://samuelfagundez.github.io/kaffeina-brunch-y-specialty-coffee-el-carmen/sitemap.xml

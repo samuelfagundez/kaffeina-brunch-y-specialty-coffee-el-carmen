@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+/* Paleta extraída de las fotografías reales del local (rótulo naranja
+   quemado de "Kaffeina", cremas de fachada y vajilla, dorado de croissants
+   y repostería, y el verde azulado del plato bajo el bowl de granola) —
+   ver punto 0.5 del handoff: nunca una paleta genérica de plantilla. */
+@theme {
+  --color-cream: #fbf6ec;
+  --color-cream-dark: #f0e6d3;
+  --color-ink: #2a2118;
+  --color-coffee: #6b4a32;
+  --color-coffee-dark: #4a3220;
+  --color-terracotta: #c2542a;
+  --color-terracotta-dark: #9c3f1f;
+  --color-gold: #d9a441;
+  --color-teal: #5fa39a;
+
+  --font-display: 'Fraunces', ui-serif, Georgia, serif;
+  --font-sans: 'Figtree', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-cream);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+  }
+}
